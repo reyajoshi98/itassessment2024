@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Navigation bar */
+#navbar{
+    display:flex; 
+    align-items: center;
+    position: relative;
+    top:0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    
+    
+
+}
+/* Navigation bar:logo and image */
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height:59px;
+    margin:3px 6px;
+}
+
+/* NavBar list styling */
+
+#navbar ul{
+    display:flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+    
+}
+
+
+/* Home Section */
+#home{
+    margin: 0; 
+    padding: 0; 
+    max-width: 1320px; 
+    max-width: 1320px; 
+    width: 100%; 
+
+}
+
+#slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0; 
+    padding: 0; 
+    
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+   
+}
+.content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white; 
+    
+    
+
+}
+
+
+
+/* Footer Styles */
+
+
+
+.contact-info{
+    width: 30%; 
+}
+
+.contact-info a {
+color: white; 
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+}
+
+.footer-info {
+    max-width: 800px; 
+    margin: 0 auto; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    display: inline-block; 
+    width: 30%; 
+    vertical-align: top;
+    text-align: left; 
+}
+
+.hours {
+    display: inline-block; 
+    width: 30%; 
+    text-align: left; 
+    margin-left: 20px; 
+}
+
+.footer-info h2 {
+    color:darkgoldenrod;
+}
+
+
+
+
+
+/* Services Section */
+#services {
+    margin: 10px;
+    display: flex; 
+    max-width: 1320px; 
+    background-color: goldenrod;
+    
+}
+
+#services .box {
+    border: 2px solid black; /* Adds a border around each box */
+    padding: 34px; /* Adds padding inside each box */
+    margin: 3px 6px; /* Adds margin around each box */
+    border-radius: 28px; /* Adds rounded corners to each box */
+    background: #f2f2f2; /* Sets the background color of each box */
+}
+
+#services .box img {
+    height: 140px; /* Sets the height of the images inside each box */
+    margin: auto; /* Centers the images horizontally */
+    display: block; /* Ensures the images are displayed as block elements */
+}
+
+
+/* Contact Section */
+#contact{
+    position:relative;
+    width: 100%; 
+    height: 100vh; 
+}
+
+#contact::before{
+    content:""; 
+    position:absolute; 
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url(contact.jpg) no-repeat center center/cover;
+    background-size: cover; 
+
+
+}
+#contact-box{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom:100px;
+    
+}
+#contact-box input,textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+    
+}
+
+
+#content-box form{
+    width:40%;
+    
+}
+#content-box label{
+    font-size:1.3rem;
+
+}
+
+.submit input[type="submit"] {
+    width: 30%; 
+    background-color: darkgoldenrod;
+    color:black; 
+    padding: 6px 20px; 
+    font-size: 1.5rem; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+} 
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding:12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color:darkgoldenrod;
+    color:white;
+    margin:17px;
+    font-size:1.5 rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+} 
+
+
+/* Gallery styles */
+
+.gallery a {
+    margin: 10px; 
+    flex: 1 0 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Your existing CSS styles */
+
+.gallery {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 0px;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.image-container {
+    width: 33.33%; 
+    margin: 0 20px;
+    float: left;
+    position: relative;
+}
+
+
+/* Image text */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: darkgoldenrod;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.5s;
+}
+
+/* Hover effect to show text */
+.image-container:hover .image-text {
+    opacity: 1;
+}
+
+/* menu section */
+

@@ -1,0 +1,158 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Navigation bar */
+#navbar{
+    display:flex; 
+    align-items: center;
+    position: relative;
+    top:0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    
+    
+
+}
+/* Navigation bar:logo and image */
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height:59px;
+    margin:3px 6px;
+}
+
+/* NavBar list styling */
+
+#navbar ul{
+    display:flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+    
+}
+
+.contact-info{
+    width: 30%; 
+}
+
+.contact-info a {
+color: white; 
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+}
+
+.footer-info {
+    max-width: 800px; 
+    margin: 0 auto; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    display: inline-block; 
+    width: 30%; 
+    vertical-align: top;
+    text-align: left; 
+}
+
+.hours {
+    display: inline-block; 
+    width: 30%; 
+    text-align: left; 
+    margin-left: 20px; 
+}
+
+.footer-info h2 {
+    color:darkgoldenrod; 
+}
+
+
+
+
+
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url('menu.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-bottom: 60px; 
+    min-height: calc(100vh - 60px); 
+}
+
+.category {
+    width: 300px;
+    margin-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0.8);  
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.price {
+    flex: 0;
+    font-size: 1.2rem;
+    color: darkgoldenrod;
+}
