@@ -115,7 +115,11 @@ footer {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+<<<<<<< HEAD
     padding-bottom: 40px; 
+=======
+    padding-bottom: 60px; 
+>>>>>>> 9b9c1c8d063edab6cc3519addc95a48a8bdb9017
     min-height: calc(100vh - 60px); 
 }
 
