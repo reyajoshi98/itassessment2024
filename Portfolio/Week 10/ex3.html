@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <h1>Check the position of the marks</h1>
+    <label for="marksInput">Enter the marks of the subject:</label>
+    <input type="number" id="marksInput">
+    <button onclick="checkMarks()">Check Position</button> <!-- calling checkMarks function -->
+    <p id="positionDisplay"></p>
+
+    <script>
+        function checkMarks() {
+            var marks = parseInt(document.getElementById("marksInput").value);
+            var position;
+
+            if (marks >= 80 && marks <= 100) {
+                position = "Distinction";
+            } else if (marks >= 60 && marks < 80) {
+                position = "First Division";
+            } else if (marks >= 50 && marks < 60) {
+                position = "Second Division";
+            } else {
+                position = "Fail";
+            }
+
+            document.getElementById("positionDisplay").innerText = "Position: " + position;
+        }
+    </script>
+</body>
+</body>
+</html>

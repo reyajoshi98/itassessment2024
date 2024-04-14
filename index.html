@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Cafe & Restro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Error loading">
+        </div>
+
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="menu.html">Menu</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="item"><a href="wireframe.html">Wireframe</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <div id="slider-container">
+            <div class="slide">
+                <img src="slide/slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="slide/slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="slide/slide3.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="slide/slide4.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="h-primary">Welcome to Kitchen Cafe & Restro!</h1>
+            <button class="btn">Book a table</button>
+        </div>
+    </section>
+    
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Changes slide every 2 seconds
+        }
+    </script>
+
+    
+    <footer>
+        <div class="footer-info">
+            <div class="location">
+                <h2>Location</h2>
+                <p>Thamel, Kathmandu</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:your-email@example.com">kitchencafe&restro@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1234567890</a></p>
+            </div>
+            
+            <div class="hours">
+                <h2>Hours</h2>
+                <pre>Monday-Thursay      11am-9pm</pre>
+                <pre>Friday-Saturday     11am-11pm</pre>
+                <pre>Sunday              4pm-9pm</pre>
+            </div>
+
+        </div>
+    </footer>
+    
+    
+</body>
+</html> 

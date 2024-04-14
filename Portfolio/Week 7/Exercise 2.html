@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+        th, td {
+        border: none; /* Remove cell borders */
+        padding: 10px; /* Padding inside each cell */
+        }
+    </style>
+</head>
+<body>
+    <form action="to_send.html" method="get">
+    <table border="1">
+        
+        <tr>
+            <th>HTML Form Test</th>
+          </tr>
+        <tr>
+            <th>Name</th>
+            <td><input type="text" name="myName" id=""></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><input type="text" name="myAddress" id=""></td>
+        </tr>
+        
+
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="myEmail" id=""></td>
+        </tr>
+
+        <tr>
+            <th>Gender</th>
+            <td><input type="radio" name="myGender"> Male 
+            <input type="radio" name="myGender">Female </td>
+            
+        </tr>
+        <br>
+        <tr>
+            <th>Hobbies</th>
+            <td><input type="radio" name="myHobby" id="">Sports
+            <input type="radio" name="myHobby" id="">Movies
+            <input type="radio" name="myHobby" id="">Travelling</td>
+        </tr>
+    
+        <tr>
+            <th>Country</th>
+            <td><select name="Country" id="">
+                <option value="C1">Nepal</option>
+                <option value="C2">China</option>
+                <option value="C3">India</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Message</th>
+            <td><textarea name="myMessage" cols="40" rows="10"></textarea>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+            </td>
+        </tr>
+</body>
+</html>

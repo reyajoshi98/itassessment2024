@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        form {
+        border: 2px solid black; /* Border around the form */
+        padding: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="to_send.html" method="get">
+            
+        <h1>Search our web site!</h1>
+        <hr style="border-width: 2px">
+        <p>Where do you want to search?</p>
+        <div>
+            <input type="radio" name="Search">Whole site <br>
+            <input type="radio" name="Search">Business Partners Section <br>
+            <input type="radio" name="Search">Corporate Communications Section <br>
+            <input type="radio" name="Search">Lotus Education Section
+        </div>
+        <br>
+        <div>
+            Enter a word or two that we can search on:<br><textarea name="mySearch"  cols="50" rows="1"></textarea>
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        </div>
+
+    
+    </form>
+</body>
+</html>
